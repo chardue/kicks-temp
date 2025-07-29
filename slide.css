@@ -1,0 +1,301 @@
+.slider-content .home-slider .slide-image>a {
+    display: flex;
+    position: relative
+}
+
+.slider-content .home-slider .slide-image>a img {
+    height: 100%;
+    width: 100%
+}
+
+.slider-content .home-slider .slide-image video {
+    position: relative;
+    width: 100%
+}
+
+.slider-content .home-slider .slide-image .mobile-img {
+    display: none
+}
+
+@media (max-width: 600px) {
+    .slider-content .home-slider .slide-image .desk-img {
+        display: none
+    }
+
+    .slider-content .home-slider .slide-image .mobile-img {
+        display: block
+    }
+
+    .slider-content .home-slider .slide-image video {
+        min-height: 500px;
+        object-fit: cover
+    }
+}
+
+.slider-content .home-slider .slide-image .slider-info-content {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%)
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info {
+    width: 50%
+}
+
+@media (max-width: 600px) {
+    .slider-content .home-slider .slide-image .slider-info-content.sm-dnone {
+        display: none
+    }
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info.slider-content-left {
+    margin-right: auto
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info.slider-content-right {
+    margin-left: auto
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info.slider-content-center {
+    margin: 0 auto
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info.slider-text-left {
+    text-align: left
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info.slider-text-right {
+    text-align: right
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info.slider-text-center {
+    text-align: center
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info span.sub-title,
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info h2,
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info a.text-btn {
+    opacity: 0
+}
+
+.slider-content .home-slider .swiper-slide-active .slide-image .slider-info-content .slider-text-info span.sub-title,
+.slider-content .home-slider .swiper-slide-active .slide-image .slider-info-content .slider-text-info h2,
+.slider-content .home-slider .swiper-slide-active .slide-image .slider-info-content .slider-text-info a.text-btn {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+.slider-content .home-slider .swiper-slide-active .slide-image .slider-info-content .slider-text-info span.sub-title {
+    animation-delay: .5s
+}
+
+.slider-content .home-slider .swiper-slide-active .slide-image .slider-info-content .slider-text-info h2 {
+    animation-delay: .8s
+}
+
+.slider-content .home-slider .swiper-slide-active .slide-image .slider-info-content .slider-text-info a.text-btn {
+    animation-delay: 1s
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info span.sub-title {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 33px
+}
+
+.slider-content .home-slider .slide-image .slider-info-content .slider-text-info h2 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: var(--font-custom-weight-section-header)
+}
+
+.slider-content .home-slider .slider-info-content .slider-text-info a.text-btn {
+    color: var(--btn-txt-color);
+    margin-top: 39px;
+    border: 2px solid var(--btn-bg-color);
+    background-color: var(--btn-bg-color);
+    box-shadow: 0 0 10px #0000001a
+}
+
+.slider-content .home-slider .slider-info-content .slider-text-info a.text-btn:hover {
+    color: var(--btn-txt-hvr-color);
+    border-color: var(--btn-bg-hvr-color);
+    background-color: var(--btn-bg-hvr-color)
+}
+
+@media (max-width: 1499px) {
+    .slider-content .home-slider .slide-image .slider-info-content .slider-text-info h2 {
+        font-size: 64px
+    }
+}
+
+@media (max-width: 1280px) {
+    .slider-content .home-slider .slide-image .slider-info-content .slider-text-info span.sub-title {
+        margin-bottom: 20px
+    }
+
+    .slider-content .home-slider .slide-image .slider-info-content .slider-text-info h2 {
+        font-size: 56px
+    }
+
+    .slider-content .home-slider .slider-info-content .slider-text-info a.text-btn {
+        margin-top: 24px
+    }
+}
+
+@media (max-width: 1199px) {
+    .slider-content .home-slider .slide-image .slider-info-content .slider-text-info h2 {
+        font-size: 48px
+    }
+}
+
+@media (max-width: 991px) {
+    .slider-content .home-slider .slide-image .slider-info-content .slider-text-info span.sub-title {
+        font-size: 18px;
+        margin-bottom: 16px
+    }
+
+    .slider-content .home-slider .slide-image .slider-info-content .slider-text-info h2 {
+        font-size: 32px
+    }
+
+    .slider-content .home-slider .slider-info-content .slider-text-info a.text-btn {
+        margin-top: 22px
+    }
+}
+
+@media (max-width: 479px) {
+    .slider-content .home-slider .slide-image .slider-info-content .slider-text-info span.sub-title {
+        font-size: var(--font-size-body)
+    }
+
+    .slider-content .home-slider .slide-image .slider-info-content .slider-text-info h2 {
+        font-size: 24px
+    }
+}
+
+.slider-content .home-slider .slider-arrow button {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    bottom: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 50%)
+}
+
+.slider-content .home-slider .slider-arrow button.arrow-prev {
+    left: 30px
+}
+
+.slider-content .home-slider .slider-arrow button.arrow-next {
+    right: 30px
+}
+
+.slider-content .home-slider .slider-arrow button:hover {
+    color: #fff;
+    background-color: var(--font-color-primary);
+    border-color: var(--font-color-primary)
+}
+
+.slider-content .home-slider .slider-arrow button i {
+    display: block
+}
+
+@media (max-width: 991px) {
+    .slider-content .home-slider .slider-arrow button {
+        height: 40px;
+        width: 40px
+    }
+
+    .slider-content .home-slider .slider-arrow button.arrow-prev {
+        left: 15px
+    }
+
+    .slider-content .home-slider .slider-arrow button.arrow-next {
+        right: 15px
+    }
+}
+
+@media (max-width: 479px) {
+    .slider-content .home-slider .slider-arrow button.arrow-prev {
+        left: 5px
+    }
+
+    .slider-content .home-slider .slider-arrow button.arrow-next {
+        right: 5px
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-45px, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
+}
+
+.slider-content .home-slider .slider-dot {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center
+}
+
+.slider-content .home-slider .slider-dot span.swiper-pagination-bullet {
+    position: relative;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--font-color-primary);
+    opacity: 1
+}
+
+.slider-content .home-slider .slider-dot span.swiper-pagination-bullet:before {
+    background-color: var(--font-color-primary);
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 0;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 100%;
+    margin: 0 auto
+}
+
+.slider-content .home-slider .slider-dot span.swiper-pagination-bullet.swiper-pagination-bullet-active:before,
+.slider-content .home-slider .slider-dot span.swiper-pagination-bullet:hover:before {
+    opacity: 1;
+    visibility: visible
+}
+
+@media (max-width: 767px) {
+    .slider-content .home-slider .slider-dot {
+        bottom: 15px
+    }
+}
+
+/*# sourceMappingURL=/cdn/shop/t/3/assets/slideshow.css.map?v=145381569391358453871742273635 */

@@ -1,0 +1,251 @@
+.newspopup .modal-dialog {
+    max-width: 1060px
+}
+
+.newspopup .modal-content {
+    background-color: var(--new-popup-bg-color);
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    border-radius: var(--sti-border-radius)
+}
+
+.newspopup .modal-body {
+    padding: 0
+}
+
+@media (max-width: 600px) {
+    .newspopup .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+        padding: 12px
+    }
+}
+
+.newspopup .modal-body button.close-btn {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    inset-inline-end: 20px;
+    line-height: 1
+}
+
+.newspopup .modal-body button.close-btn:hover {
+    opacity: 1;
+    color: var(--font-color-primary)
+}
+
+.newspopup .newsletter-info {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.newspopup .newsletter-info .subscribe_area {
+    padding: 50px;
+    margin: 0 auto;
+    width: 50%
+}
+
+.newspopup .newsletter-info .news-banner {
+    width: 50%
+}
+
+.newspopup .newsletter-info .news-banner a {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.newspopup .subscribe_area .subscribe-content span {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase
+}
+
+.newspopup .subscribe_area .subscribe-content h2 {
+    font-size: 32px;
+    padding-bottom: 30px
+}
+
+.newspopup .newsletter-info .subscribe_area .collection-button {
+    margin-top: 30px
+}
+
+.newspopup .newsletter-info .subscribe_area .collection-button a i {
+    line-height: 1;
+    padding-left: 5px
+}
+
+.newspopup .newsletter-info .subscribe_area .dont-show {
+    margin-top: 30px
+}
+
+.newspopup .newsletter-info .subscribe_area .dont-show label {
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center
+}
+
+.newspopup .newsletter-info .subscribe_area .dont-show label span {
+    font-size: var(--font-size-body)
+}
+
+.newspopup .newsletter-info .subscribe_area .dont-show label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.newspopup .newsletter-info .subscribe_area .dont-show label .cust-check {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border: var(--sti-border);
+    overflow: hidden;
+    background-color: #fff;
+    margin-inline-end: 10px
+}
+
+.newspopup .newsletter-info .subscribe_area .dont-show label .cust-check:after {
+    display: none;
+    content: "\e92b";
+    font-family: feather !important;
+    color: #666;
+    font-size: 16px
+}
+
+.newspopup .newsletter-info .subscribe_area .dont-show label input:checked~span.cust-check:after {
+    display: block
+}
+
+@media (max-width: 1199px) {
+    .newspopup .modal-dialog {
+        margin: 0 30px
+    }
+
+    .newspopup .newsletter-info .subscribe_area {
+        padding: 30px
+    }
+
+    .newspopup .newsletter-info .subscribe_area .dont-show {
+        margin-top: 20px
+    }
+}
+
+@media (max-width: 600px) {
+    .newspopup .modal-dialog {
+        margin: 0
+    }
+
+    .newspopup .newsletter-info .subscribe_area,
+    .newspopup .newsletter-info .news-banner {
+        width: 100%
+    }
+
+    .newspopup .newsletter-info .news-banner a {
+        height: 300px
+    }
+
+    .newspopup .newsletter-info .subscribe_area {
+        padding: 30px 12px
+    }
+}
+
+@media (max-width: 479px) {
+    .newspopup .modal-body button.close-btn {
+        top: 10px;
+        inset-inline-end: 10px
+    }
+
+    .newspopup .newsletter-info .subscribe_area .subscribe-content h2 {
+        font-size: 20px
+    }
+}
+
+.newspopup .newsletter-info .subscribe_area .product-news-list {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    box-shadow: none;
+    background-color: #fff
+}
+
+.newspopup .newsletter-info .subscribe_area .product-news-list .product-image {
+    width: 160px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: var(--sti-border-radius)
+}
+
+.newspopup .newsletter-info .subscribe_area .product-news-list .product-image .product-label {
+    padding: 8px 12px;
+    top: 10px;
+    left: 10px;
+    gap: 2px;
+    -webkit-transform: unset;
+    -o-transform: unset;
+    transform: unset;
+    writing-mode: unset;
+    -ms-writing-mode: unset;
+    border-radius: var(--sti-border-radius)
+}
+
+.newspopup .newsletter-info .subscribe_area .product-news-list .product-content {
+    width: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px;
+    text-align: start;
+    border-top: none;
+    transform: none
+}
+
+.newspopup .newsletter-info .subscribe_area .product-news-list .product-content .product-ratting {
+    padding-bottom: 10px
+}
+
+.newspopup .newsletter-info .subscribe_area .product-news-list .product-content h6 {
+    font-size: 16px
+}
+
+.newspopup .newsletter-info .subscribe_area .product-news-list .product-content .price-box {
+    margin-top: 10px;
+    gap: 5px
+}
+
+.newspopup .newsletter-info .subscribe_area .product-news-list .product-content .price-box span.old-price {
+    margin: 0
+}
+
+@media (max-width: 1199px) {
+    .newspopup .newsletter-info .subscribe_area .product-news-list .product-image {
+        width: 120px
+    }
+
+    .newspopup .newsletter-info .subscribe_area .product-news-list .product-content {
+        width: calc(100% - 120px)
+    }
+}
+
+@media (max-width: 479px) {
+    .newspopup .newsletter-info .subscribe_area .product-news-list .product-content h6 {
+        font-size: var(--font-size-body)
+    }
+}
+
+/*# sourceMappingURL=/cdn/shop/t/3/assets/news-popup.css.map?v=182189099777733598941749817382 */
